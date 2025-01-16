@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "service_linker"
+version = "0.0.0-alpha"
+description = "A simple Python library to manage kinds of services connections"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [
+    { name = "zjd-melo", email = "zhujiadong.melo@gmail.com" }
+]
+license = { file = "LICENSE" }
+keywords = ["services manage"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/zjd-melo/service_linker"
+Repository = "https://github.com/zjd-melo/service_linker.git"
+Issues = "https://github.com/zjd-melo/service_linker/issues"
+
+
+[tool.setuptools]
+packages = ["service_linker"]
+include-package-data = false
