@@ -14,4 +14,7 @@ class ElasticSearchAdapter(ServiceAdapter):
         return es
 
     def do_close(self, es):
-        es.close()
+        if hasattr(es, "close"):  # version >= 7.14.0
+            es.close()
+        else:  # version < 7.14.0
+            es.transport.close()
