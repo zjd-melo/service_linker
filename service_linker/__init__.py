@@ -1,5 +1,5 @@
-from service_linker.adapter import ServiceAdapter
-from service_linker.adapters import (
+from .adapter import ServiceAdapter
+from .adapters import (
     ElasticSearchAdapter,
     KafkaConsumerAdapter,
     KafkaProducerAdapter,
@@ -9,7 +9,7 @@ from service_linker.adapters import (
     json_decode,
     json_encode,
 )
-from service_linker.core import ServiceManager
+from .core import ServiceManager
 
 __all__ = [
     "ServiceAdapter",

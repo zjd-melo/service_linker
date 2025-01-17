@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "service_linker"
-version = "0.0.0-alpha"
+version = "0.0.2-alpha"
 description = "A simple Python library to manage kinds of services connections"
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [
@@ -26,5 +26,8 @@ Issues = "https://github.com/zjd-melo/service_linker/issues"
 
 
 [tool.setuptools]
-packages = ["service_linker"]
+packages = [
+    "service_linker",            
+    "service_linker.adapters"  
+]
 include-package-data = false
